@@ -54,7 +54,7 @@ const characterLocation = () => {
     axios
       .get(`https://rickandmortyapi.com/api/character/${charIDStr}`)
       .then((res) => {
-        setCharacterData(res.data);
+        setCharacterData(res.data.results);
       })
       .catch((err) => {
         console.log(err);

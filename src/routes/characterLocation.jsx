@@ -45,9 +45,6 @@ const CharacterLocation = () => {
                 />
               </Col>
             ))}
-            <Col>
-              <p>No location data fetched</p>
-            </Col>
           </Row>
         </Container>
       </Container>
