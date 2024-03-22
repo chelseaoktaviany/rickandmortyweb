@@ -37,19 +37,15 @@ function App() {
           <h1 className="py-2 h3">Characters</h1>
 
           <Row>
-            {charData.length > 0 &&
-              charData.map((item) => (
-                <Col md={4} key={item.id}>
-                  <CharacterCard
-                    id={item.id}
-                    name={item.name}
-                    image={item.image}
-                  />
-                </Col>
-              ))}
-            <Col>
-              <p>No character data fetched</p>
-            </Col>
+            {charData.map((item) => (
+              <Col md={4} key={item.id}>
+                <CharacterCard
+                  id={item.id}
+                  name={item.name}
+                  image={item.image}
+                />
+              </Col>
+            ))}
           </Row>
         </Container>
       </Container>
