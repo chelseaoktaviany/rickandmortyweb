@@ -35,17 +35,16 @@ const CharacterLocation = () => {
           <h1 className="py-2 h3">Locations</h1>
 
           <Row>
-            {locationData.length > 0 &&
-              locationData.map((item) => (
-                <Col md={4} key={item.id}>
-                  <LocationCard
-                    locationId={item.id}
-                    name={item.name}
-                    type={item.type}
-                    dimension={item.dimension}
-                  />
-                </Col>
-              ))}
+            {locationData.map((item) => (
+              <Col md={4} key={item.id}>
+                <LocationCard
+                  locationId={item.id}
+                  name={item.name}
+                  type={item.type}
+                  dimension={item.dimension}
+                />
+              </Col>
+            ))}
             <Col>
               <p>No location data fetched</p>
             </Col>

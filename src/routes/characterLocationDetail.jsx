@@ -85,20 +85,15 @@ const characterLocation = () => {
           </Row>
           <h1 className="py-2 h3">Residents</h1>
           <Row>
-            {characterData.length > 0 &&
-              characterData.map((item) => (
-                <Col md={4} key={item.id}>
-                  <CharacterCard
-                    id={item.id}
-                    name={item.name}
-                    image={item.image}
-                  />
-                </Col>
-              ))}
-
-            <Col>
-              <p>Nothing found</p>
-            </Col>
+            {characterData.map((item) => (
+              <Col md={4} key={item.id}>
+                <CharacterCard
+                  id={item.id}
+                  name={item.name}
+                  image={item.image}
+                />
+              </Col>
+            ))}
           </Row>
         </Container>
       </Container>
