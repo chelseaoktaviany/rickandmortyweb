@@ -10,7 +10,7 @@ import Header from "../components/header/Header";
 import CharacterCard from "../components/characterCard/CharacterCard";
 
 const characterLocation = () => {
-  const { characterId, locationId } = useParams();
+  const { locationId } = useParams();
 
   const [locationData, setLocationData] = useState({
     name: "",
